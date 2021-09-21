@@ -5,7 +5,11 @@ Storybook v6とv5では各種設定の記述ファイルや追加Addonなどが�
 
 VuetifyのカスタマイズにSCSS変数を使用でできるが、デフォルトではStorybookからはSCSS変数が反映されないため対応。
 
+## 環境構築のポイント
 
+- Storybook v5では`webpack.config.js`に設定を書いていたが、v6からは`.storybook/main.js`に書く必要がある。
+- node-sassを使わないようにし、sass(Dart Sass)を使う。
+- sass-loaderのバージョンは10以上でもよいが、main.jsでのloader設定記のoptionsが異なるので注意。
 
 ## 参考にした情報
 
