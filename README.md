@@ -5,6 +5,15 @@ Storybook v6とv5では各種設定の記述ファイルや追加Addonなどが�
 
 VuetifyのカスタマイズにSCSS変数を使用でできるが、デフォルトではStorybookからはSCSS変数が反映されないため対応。
 
+
+## 説明
+
+- 実行方法
+  - `yarn` で依存関係をインストール
+  - `yarn storybook`でstorybookを起動
+- `styles/variables.scss`に記載したSCSS変数がVuetifyに渡されます
+
+
 ## 環境構築のポイント
 
 - Storybook v5では`webpack.config.js`に設定を書いていたが、v6からは`.storybook/main.js`に書く必要がある。
